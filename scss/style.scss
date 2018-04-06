@@ -1,0 +1,85 @@
+@font-face {
+    font-family: titleFont;
+	src: url(../GrundfosTheSansV2OT-4SL.otf);
+}
+
+@font-face {
+	font-family: textFont;
+	src: url(../GrundfosTheSansV2OT-6SB.otf);
+}
+
+$font-titles: titleFont;
+$font-text: textFont;
+$font-bodytext: Tahoma, sans-serif;
+
+$color-backgroundlight: #DCDCDC;
+$color-backgrounddark: #959595;
+$color-blackfont: #333333;
+$color-bodytext: #727272;
+$color-texthighlight: #0068B4;
+$color-ctabutton: #6EB556;
+$color-stndbutton: #3386C3;
+$color-negbutton: #999999;
+$color-inactbutton: #DEDEDE;
+
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main main main'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+    grid-gap: 15px;
+    padding: 0;
+	margin: 0;
+	background-color: $color-backgroundlight;
+	
+	&__div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+	padding: 20px 0;
+	border-color: black;
+	}
+}
+
+.grundfosHeader {
+	grid-area: header;
+}
+
+
+.rightNavMenu {
+    grid-area: menu;
+	
+	&__a {
+		display: block;
+		text-decoration: none;
+		font-family: $font-text;
+		color: $color-blackfont;
+		text-align: center;
+	}
+}
+
+.mainContent {
+	grid-area: main;
+}
+
+.userList {
+	grid-area: main;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 500px;
+    width: 60%;
+	
+	&__li {
+    list-style-type: none;
+    text-align: center;
+    line-height: 1em;
+	color: $color-blackfont;
+	font-family: $font-text;
+	}
+}
+
+.grundfosFooter {
+	grid-area: footer;
+	text-align: center;
+}
