@@ -63,6 +63,22 @@ $color-inactbutton: #DEDEDE;
 	grid-area: main;
 }
 
+.mainContentReward {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.mainContentCharity {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	background-color: #ffffff;
+	grid-row-gap: 5em;
+}
+
 .userList {
 	grid-area: main;
     overflow: hidden;
@@ -82,4 +98,87 @@ $color-inactbutton: #DEDEDE;
 .grundfosFooter {
 	grid-area: footer;
 	text-align: center;
+}
+
+.producttitle {
+	font-family: $font-titles;
+	color: $color-blackfont;
+	font-size: 3em;
+}
+
+.charitytitle {
+	font-family: $font-titles;
+	color: $color-blackfont;
+	font-size: 3em;
+}
+
+.rewardpictures {
+	width: 60%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+.charitypictures {
+	width: 60%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+
+.readmorebtn {
+	background-color: $color-stndbutton;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-family: $font-bodytext;
+	text-align: center;
+	cursor: pointer;
+	height: 50px;
+	width: 150px;
+	font-size: 1.3em;
+	margin: 3%;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+}
+
+.donatebtn {
+	background-color: $color-ctabutton;
+	border: none;
+	border-radius: 5px;
+	color: #ffffff;
+	font-family: $font-bodytext;
+	text-align: center;
+	cursor: pointer;
+	height: 50px;
+	width: 150px;
+	font-size: 1.3em;
+	margin: 3%;
+	margin-left: 0;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+}
+
+.bodytextcharity {
+	font-family: $font-bodytext;
+	color: $color-bodytext;
+	font-size: 1.3em;
+	text-align: left;
+
+
+}
+
+.titletextcharity {
+	font-family: $font-text;
+	color: $color-blackfont;
+	font-size: 1.5em;
+	text-align: left;
+	margin-top: 0;
+}
+
+.charitytext {
+	text-align: left;
 }
