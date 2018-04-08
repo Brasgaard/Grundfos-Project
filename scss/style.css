@@ -20,9 +20,9 @@
 .grundfosHeader {
   grid-area: header; }
 
-.rightNavMenu {
+.leftNavMenu {
   grid-area: menu; }
-  .rightNavMenu__a {
+  .leftNavMenu__a {
     display: block;
     text-decoration: none;
     font-family: textFont;
@@ -31,20 +31,49 @@
 
 .mainContent {
   grid-area: main; }
-
-.userList {
-  grid-area: main;
-  overflow: hidden;
-  overflow-y: scroll;
-  height: 500px;
-  width: 60%; }
-  .userList__li {
-    list-style-type: none;
-    text-align: center;
-    line-height: 1em;
+  .mainContent__userList {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto; }
+  .mainContent__h1 {
+    text-align: left;
+    font-family: titleFont;
+    color: #333333; }
+  .mainContent__p {
+    text-align: left;
+    font-family: Tahoma, sans-serif;
     color: #333333;
-    font-family: textFont; }
+    margin-bottom: 10%; }
+
+#addBtn {
+  background-color: #6EB556;
+  font-family: textFont;
+  margin: auto 3% 2% 3%; }
+
+#courseBtn {
+  background-color: #3386C3;
+  font-family: textFont;
+  margin: auto 3% 2% 3%; }
+
+#removeBtn {
+  background-color: #999999;
+  font-family: textFont;
+  margin: auto 3% 2% 3%; }
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  font-family: textFont; }
+
+tr:nth-child(even) {
+  background-color: #DCDCDC; }
+
+th {
+  background-color: #959595;
+  color: white; }
 
 .grundfosFooter {
   grid-area: footer;
   text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

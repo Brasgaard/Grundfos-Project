@@ -47,7 +47,7 @@ $color-inactbutton: #DEDEDE;
 }
 
 
-.rightNavMenu {
+.leftNavMenu {
     grid-area: menu;
 	
 	&__a {
@@ -61,22 +61,58 @@ $color-inactbutton: #DEDEDE;
 
 .mainContent {
 	grid-area: main;
+	
+	&__userList {
+		border-collapse: collapse;
+    	width: 80%;
+		margin: auto;
+	}
+	
+	&__h1 {
+		text-align: left;
+		font-family: $font-titles;
+		color: $color-blackfont;
+	}
+	
+	&__p {
+		text-align: left;
+		font-family: $font-bodytext;
+		color: $color-blackfont;
+		margin-bottom: 10%;
+	}
 }
 
-.userList {
-	grid-area: main;
-    overflow: hidden;
-    overflow-y: scroll;
-    height: 500px;
-    width: 60%;
-	
-	&__li {
-    list-style-type: none;
-    text-align: center;
-    line-height: 1em;
-	color: $color-blackfont;
+#addBtn {
+	background-color: $color-ctabutton;
 	font-family: $font-text;
-	}
+	margin: auto 3% 2% 3%;
+}
+
+#courseBtn {
+	background-color: $color-stndbutton;
+	font-family: $font-text;
+	margin: auto 3% 2% 3%;
+}
+
+#removeBtn {
+	background-color: $color-negbutton;
+	font-family: $font-text;
+	margin: auto 3% 2% 3%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	font-family: $font-text;
+}
+
+tr:nth-child(even){
+	background-color: $color-backgroundlight;
+}
+
+th {
+    background-color: $color-backgrounddark;
+    color: white;
 }
 
 .grundfosFooter {
