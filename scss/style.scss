@@ -11,7 +11,6 @@
 $font-titles: titleFont;
 $font-text: textFont;
 $font-bodytext: Tahoma, sans-serif;
-
 $color-backgroundlight: #DCDCDC;
 $color-backgrounddark: #959595;
 $color-blackfont: #333333;
@@ -21,7 +20,11 @@ $color-ctabutton: #6EB556;
 $color-stndbutton: #3386C3;
 $color-negbutton: #999999;
 $color-inactbutton: #DEDEDE;
+$color-whitefont:#eee;
 
+body {
+    margin:0;
+}
 
 .gridContainer {
     display: grid;
@@ -47,7 +50,7 @@ $color-inactbutton: #DEDEDE;
 }
 
 
-.rightNavMenu {
+.leftNavMenu {
     grid-area: menu;
 	
 	&__a {
@@ -61,6 +64,9 @@ $color-inactbutton: #DEDEDE;
 
 .mainContent {
 	grid-area: main;
+    text-align: left;
+    padding:0 50px 50px 50px;
+    min-height:70vh;
 }
 
 .mainContentReward {
@@ -100,6 +106,7 @@ $color-inactbutton: #DEDEDE;
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .producttitle {
 	font-family: $font-titles;
 	color: $color-blackfont;
@@ -181,4 +188,132 @@ $color-inactbutton: #DEDEDE;
 
 .charitytext {
 	text-align: left;
+=======
+/* Index.php */
+
+.intro {
+    
+    h1 {
+        font-size:35px;
+        font-family:$font-titles;
+    }
+    p {
+        font-family:$font-bodytext;
+        font-size:16px;
+        
+        strong {
+            color:$color-texthighlight;
+        }
+    }
+}
+
+.intro-banner {
+    background-image:url(../img/intro-banner.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height:325px;
+    color:$color-whitefont;
+    
+    h2 {
+        font-size:43px;
+        font-family:$font-titles;
+        padding-left:30px;
+        padding-top:30px;
+        margin-bottom:0;
+    }
+    
+    p {
+        font-size: 22px;
+        font-family:$font-bodytext;
+        padding-left:30px;
+        margin-top:0;
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+    
+    .linkedIn {
+        margin-top:30px;
+        text-align: right;
+    }
+    
+    .linkedIn:hover {
+        opacity:0.8;
+    }
+}
+
+.highlighted-data {
+    color:$color-texthighlight;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    background-color:$color-backgroundlight;
+    
+    &__overview {
+        
+        padding-left:30px;
+        
+        ul {
+            list-style-type: none;
+            padding:0;
+            
+            i {
+                color:$color-negbutton;
+                width:20px;
+            }
+            
+            li {
+                margin-top:20px;
+                font-family: $font-text;
+                color:$color-blackfont;
+            }
+        }
+    }
+    
+    h3 {
+        font-family:$font-titles;
+        font-size:35px;
+        color:$color-blackfont;
+    }
+    
+    &__diplomaProgress {
+        
+        padding-bottom:0px;
+        
+        .diploma-name {
+            float:left;
+        }
+        
+    }
+    
+    .diploma-container {
+        background-color: red;
+        margin-bottom: 10px;
+        margin-right:40px;
+        width:70%;
+        float:left;
+    }
+    
+    .diplomaRequirement {
+        text-align: center;
+        padding-right: 20px;
+        line-height: 34px;
+        color: $color-whitefont;
+        font-family:$font-titles;
+    }
+    
+    .municipalWastewater {
+        width: 80%;
+        background-color: #008ba9;
+    }
+    
+    .diploma-name {
+        padding-right:30px;
+        margin-top:8px;
+        font-family:$font-text;
+        color:$color-blackfont;
+    }
+>>>>>>> ce0855d2be585503fd089947746c0bfb703998ef
 }
