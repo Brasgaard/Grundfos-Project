@@ -169,6 +169,42 @@ body {
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 }
 
+.facebookbtn {
+    background-color: #3C5A99;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: $font-bodytext;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-size: 1.3em;
+    margin: 3%;
+    margin-left: 0;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+}
+
+.linkedinbtn {
+    background-color: #0077B7;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: $font-bodytext;
+    text-align: center;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    font-size: 1.3em;
+    margin: 3%;
+    margin-left: 0;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+}
+
 .bodytextcharity {
 	font-family: $font-bodytext;
 	color: $color-bodytext;
