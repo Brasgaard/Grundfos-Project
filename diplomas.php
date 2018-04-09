@@ -30,8 +30,8 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <a href="#"><button class="donatebtn" type="button">Download</button></a>
-                <a href="#" target="_blank"><button class="facebookbtn" type="button"><i class="fab fa-facebook-f"></i> Share</button></a>
-                <a href="#" target="_blank"><button class="linkedinbtn" type="button"><i class="fab fa-linkedin-in"></i> Share</button></a>
+                <a href="#" target="_blank"><button class="facebookbtn" type="button"><i class="fab fa-facebook"></i> Share</button></a>
+                <a href="#" target="_blank"><button class="linkedinbtn" type="button"><i class="fab fa-linkedin"></i> Share</button></a>
              </section>
 
             <!-- COMMERCIAL BUILDING -->
@@ -48,8 +48,8 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 <a href="#"><button class="donatebtn" type="button">Download</button></a>
-                <a href="#" target="_blank"><button class="facebookbtn" type="button"><i class="fab fa-facebook-f"></i> Share</button></a>
-                <a href="#" target="_blank"><button class="linkedinbtn" type="button"><i class="fab fa-linkedin-in"></i> Share</button></a>
+                <a href="#" target="_blank"><button class="facebookbtn" type="button"><i class="fab fa-facebook"></i> Share</button></a>
+                <a href="#" target="_blank"><button class="linkedinbtn" type="button"><i class="fab fa-linkedin"></i> Share</button></a>
              </section>
 
         </div>

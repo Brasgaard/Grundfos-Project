@@ -21,7 +21,7 @@
                 <p><strong>Erhvervsakademi Aarhus</strong> has unlocked the diploma <strong>Commercial Buildings</strong>.<br/>
                 Do you want to share this with your network?<br/>
                 
-                <a href="#" target="_blank"><button style="float: right;" class="linkedinbtn" type="button"><i class="fab fa-linkedin-in"></i> Share</button></a>
+                <a href="#" target="_blank"><button style="float: right;" class="linkedinbtn" type="button"><i class="fab fa-linkedin"></i> Share</button></a>
 
                 </p>
             </article>
