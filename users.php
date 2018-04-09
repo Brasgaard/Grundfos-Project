@@ -29,7 +29,7 @@
             <button id="addBtn" class="userListBtn">Add User</button>
             <button id="courseBtn" class="userListBtn">Assign Course</button>
             <button id="removeBtn" class="userListBtn">Remove User</button>
-            <table class="mainContent__userList">
+            <table class="mainContent__userList" id="userTable">
                 <tr id="mainListRow">
                     <th><input type="checkbox" name="" id="mainCheck">Select all</th>
                     <th>Name</th>
