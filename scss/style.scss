@@ -382,10 +382,10 @@ th {
     .linkedIn {
         margin-top:30px;
         text-align: right;
-    }
-    
-    .linkedIn:hover {
-        opacity:0.8;
+        
+        &:hover {
+            opacity:0.8;
+        }
     }
 }
 
@@ -398,9 +398,10 @@ th {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     background-color:$color-backgroundlight;
+    padding-bottom: 30px;
     
     &__overview {
-        
+        font-size:22px;
         padding-left:30px;
         
         ul {
@@ -432,15 +433,18 @@ th {
         
         .diploma-name {
             float:left;
+            width:180px;
+            font-size:16px;
         }
         
     }
     
     .diploma-container {
-        background-color: red;
+        background-color: $color-backgrounddark;
         margin-bottom: 10px;
         margin-right:40px;
         width:70%;
+        border-radius:7px;
         float:left;
     }
     
@@ -450,11 +454,16 @@ th {
         line-height: 34px;
         color: $color-whitefont;
         font-family:$font-titles;
+        border-radius:7px;
+        background-color: $color-stndbutton;
     }
     
     .municipalWastewater {
-        width: 80%;
-        background-color: #008ba9;
+        width: 50%; 
+    }
+    
+    .commercialBuildings {
+        width: 75%;
     }
     
     .diploma-name {
@@ -462,5 +471,50 @@ th {
         margin-top:8px;
         font-family:$font-text;
         color:$color-blackfont;
+    }
+}
+
+.activityFeed {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    margin-top:20px;
+    background-color:$color-backgroundlight;
+    padding-bottom: 30px;
+    padding-left:30px;
+    
+    h3 {
+        font-family:$font-titles;
+        font-size:35px;
+        color:$color-blackfont;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding:0;
+        font-family: $font-bodytext;
+        font-size:22px;
+        line-height:18px;
+    }
+    
+    li {
+        margin-bottom:25px;
+    }
+    
+    strong {
+        color:$color-texthighlight;
+    }
+    
+    small {
+        color:$color-backgrounddark;
+        font-size:16px;
+        padding:0;
+        margin:0;
+    }
+    
+    i {
+        color:$color-negbutton;
+        width:20px;
     }
 }
