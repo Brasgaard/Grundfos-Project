@@ -19,6 +19,9 @@
             <!-- WASTEWATER DIPLOMA -->
             <section>
                 <img class="rewardpictures" src="img/grundfos-wastewater.jpg" title="Grundfos municipal wastewater" alt="Grundfos municipal wastewater">
+                <div class="diploma-container">
+                    <div class="diplomaRequirement"><i class="fas fa-user"></i> 4 / 4</div>
+                </div>
             </section>
                 
             <section class="charitytext">
@@ -37,6 +40,9 @@
             <!-- COMMERCIAL BUILDING -->
             <section>
                 <img class="rewardpictures" src="img/grundfos-commercial.jpg" title="Grundfos commercial building" alt="Grundfos commercial building">
+            <div class="diploma-container">
+                    <div class="diplomaRequirement commercialBuildings"><i class="fas fa-user"></i> 3 / 4</div>
+                </div>
             </section>
             
             <section class="charitytext">
@@ -46,16 +52,31 @@
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>
 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-<<<<<<< HEAD
-                <a href="#"><button class="donatebtn" type="button">Download</button></a>
-                <a href="#" target="_blank"><button class="facebookbtn" type="button"><i class="fab fa-facebook"></i> Share</button></a>
-                <a href="#" target="_blank"><button class="linkedinbtn" type="button"><i class="fab fa-linkedin"></i> Share</button></a>
-=======
+                
                 <button class="donatebtn inactive" type="button">Download</button>
                 <button class="facebookbtn inactive" type="button"><i class="fab fa-facebook-f"></i> Share</button>
                 <button class="linkedinbtn inactive" type="button"><i class="fab fa-linkedin-in"></i> Share</button>
->>>>>>> 63c682d9613aa6cc4c12af4f79b88eff829ae162
+             </section>
+            
+            <!-- INDUSTRY -->
+            <section>
+                <img class="rewardpictures" src="img/grundfos-industry.jpg" title="Grundfos Industry" alt="Grundfos industry">
+            <div class="diploma-container">
+                    <div class="diplomaRequirement industry"><i class="fas fa-user"></i> 2 / 4</div>
+                </div>
+            </section>
+            
+            <section class="charitytext">
+                <h2 class="titletextcharity">Industry</h2>
+                <p class="bodytextcharity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
+
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>
+
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <button class="donatebtn inactive" type="button">Download</button>
+                <button class="facebookbtn inactive" type="button"><i class="fab fa-facebook-f"></i> Share</button>
+                <button class="linkedinbtn inactive" type="button"><i class="fab fa-linkedin-in"></i> Share</button>
              </section>
 
         </div>

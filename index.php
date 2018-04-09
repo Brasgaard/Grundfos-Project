@@ -38,7 +38,7 @@
                     <h3>Diploma Progress</h3>
                     <p class="diploma-name">Municipal Wastewater</p>
                     <div class="diploma-container">
-                    	<div class="diplomaRequirement municipalWastewater"><i class="fas fa-user"></i> 2 / 4</div>
+                    	<div class="diplomaRequirement"><i class="fas fa-user"></i> 4 / 4</div>
                     </div>
                     <p class="diploma-name">Commercial Buildings</p>
                     <div class="diploma-container">
@@ -46,7 +46,7 @@
                     </div>
                     <p class="diploma-name">Industry</p>
                     <div class="diploma-container">
-                    	<div class="diplomaRequirement"><i class="fas fa-user"></i> 4 / 4</div>
+                    	<div class="diplomaRequirement industry"><i class="fas fa-user"></i> 2 / 4</div>
                     </div>
                 </article>
             </section>

@@ -208,6 +208,7 @@ th {
     font-weight: 300;
     text-align: left;
     margin-left: 20%;
+    margin-bottom:0;
 }
 
 .rewardpictures {
@@ -238,6 +239,43 @@ th {
     grid-template-columns: 50% 50%;
     background-color: $color-whitefont;
     grid-row-gap: 5em;
+    padding-bottom:80px;
+    
+    &__diplomaProgress {
+
+        padding-bottom:0px;
+
+        .diploma-name {
+            float:left;
+            width:180px;
+            font-size:16px;
+        }
+    }
+
+    .diploma-container {
+        background-color: $color-backgrounddark;
+        width:60%;
+        border-radius:7px;
+        margin: auto;
+        margin-top:8px;
+    }
+
+    .diplomaRequirement {
+        text-align: center;
+        padding-right: 20px;
+        line-height: 34px;
+        color: $color-whitefont;
+        font-family:$font-titles;
+        border-radius:7px;
+        background-color: $color-stndbutton;
+    }
+
+    .diploma-name {
+        padding-right:30px;
+        margin-top:8px;
+        font-family:$font-text;
+        color:$color-blackfont;
+    }   
 }
 
 .mainContentProduct {
@@ -264,6 +302,7 @@ th {
 }
 
 .charitytext {
+    margin-right:40px;
     text-align: left;
 }
 
@@ -485,14 +524,6 @@ th {
         background-color: $color-stndbutton;
     }
     
-    .municipalWastewater {
-        width: 50%; 
-    }
-    
-    .commercialBuildings {
-        width: 75%;
-    }
-    
     .diploma-name {
         padding-right:30px;
         margin-top:8px;
@@ -544,4 +575,15 @@ th {
         color:$color-negbutton;
         width:20px;
     }
+}
+
+/* Diploma Progress */
+
+
+.commercialBuildings {
+    width: 75%;
+}
+
+.industry {
+    width:50%;
 }
