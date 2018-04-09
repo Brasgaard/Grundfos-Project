@@ -341,6 +341,15 @@ th {
     }
 }
 
+.inactive {
+    background-color: $color-inactbutton;
+    cursor: auto;
+
+    &:hover {
+        background-color: $color-inactbutton;
+    }
+}
+
 /* Index.php */
 
 .intro {
