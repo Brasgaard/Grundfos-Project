@@ -1,37 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grundfos Ecademy - Charity</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <title>Grundfos Ecademy - Diploma</title>
+    <?php include 'include/head.php';?>
 </head>
 <body>
     <div class="gridContainer">
 
-        <header class="gridContainer__div grundfosHeader">
-            <p>Test</p>
-        </header>
+    <?php include 'include/header.php';?>
 
-        <div class="gridContainer__div leftNavMenu">
-            <a href="index.php" class="leftNavMenu__a"><i class="fas fa-home"></i> Home</a>
-            <a href="users.php" class="leftNavMenu__a"><i class="fas fa-user"></i> Users</a>
-            <a href="rewards.php" class="leftNavMenu__a"><i class="fas fa-gift"></i> Rewards</a>
-            <a href="diplomas.php" class="leftNavMenu__a"><i class="fas fa-clipboard-check"></i> Diplomas</a>
-        </div>
+    <?php include 'include/navigation.php';?>
 
         <div class="gridContainer__div mainContentCharity">
             
+            <h1 class="titleleft">Diplomas</h1>
+            <div></div>
+
             <!-- WASTEWATER DIPLOMA -->
-            <section class="charitypics">
-                <img class="charitypictures" src="img/grundfos-wastewater.jpg">
+            <section>
+                <img class="charitypictures" src="img/grundfos-wastewater.jpg" title="Grundfos municipal wastewater" alt="Grundfos municipal wastewater">
             </section>
                 
             <section class="charitytext">
-                <h3 class="titletextcharity">Municipal Wastewater</h3>
+                <h2 class="titletextcharity">Municipal Wastewater</h2>
                 <p class="bodytextcharity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>
@@ -44,12 +35,12 @@
              </section>
 
             <!-- COMMERCIAL BUILDING -->
-            <section class="charitypics">
-                <img class="charitypictures" src="img/grundfos-commercial.jpg">
+            <section>
+                <img class="charitypictures" src="img/grundfos-commercial.jpg" title="Grundfos commercial building" alt="Grundfos commercial building">
             </section>
             
             <section class="charitytext">
-                <h3 class="titletextcharity">Commercial Building</h3>
+                <h2 class="titletextcharity">Commercial Building</h2>
                 <p class="bodytextcharity">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>
 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br>
@@ -63,9 +54,7 @@
 
         </div>
 
-        <footer class="gridContainer__div grundfosFooter">
-            <p>Test</p>
-        </footer>
+    <?php include 'include/footer.php';?>
 
 </body>
 </html>

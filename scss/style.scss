@@ -20,7 +20,7 @@ $color-ctabutton: #6EB556;
 $color-stndbutton: #3386C3;
 $color-negbutton: #999999;
 $color-inactbutton: #DEDEDE;
-$color-whitefont:#eee;
+$color-whitefont: #ffffff;
 
 body {
     margin:0;
@@ -47,8 +47,22 @@ body {
 
 .grundfosHeader {
 	grid-area: header;
+    padding: 0;
 }
 
+.grundfosFooter {
+    padding: 0;
+}
+
+#headerimage {
+    widows: 100%;
+    padding: 0;
+}
+
+#footerimage {
+    width: 100%;
+    padding: 0;
+}
 
 .leftNavMenu {
     grid-area: menu;
@@ -58,7 +72,10 @@ body {
 		text-decoration: none;
 		font-family: $font-text;
 		color: $color-blackfont;
-		text-align: center;
+		text-align: left;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
 	}
 }
 
@@ -127,22 +144,6 @@ th {
     color: white;
 }
 
-.mainContentReward {
-	grid-area: main;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	text-align: center;
-	background-color: #ffffff;
-}
-
-.mainContentCharity {
-	grid-area: main;
-	display: grid;
-	grid-template-columns: 50% 50%;
-	background-color: #ffffff;
-	grid-row-gap: 5em;
-}
-
 .userList {
 	grid-area: main;
     overflow: hidden;
@@ -164,16 +165,20 @@ th {
 	text-align: center;
 }
 
-.producttitle {
+.rewardtitle {
 	font-family: $font-titles;
 	color: $color-blackfont;
 	font-size: 3em;
+    font-weight: 300;
 }
 
-.charitytitle {
-	font-family: $font-titles;
-	color: $color-blackfont;
-	font-size: 3em;
+.titleleft {
+    font-family: $font-titles;
+    color: $color-blackfont;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 20%;
 }
 
 .rewardpictures {
@@ -183,19 +188,63 @@ th {
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
 }
 
-.charitypictures {
-	width: 60%;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+.productpictures {
+    width: 50%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.35);
+}
+
+.mainContentReward {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    background-color: $color-whitefont;
+}
+
+.mainContentCharity {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: $color-whitefont;
+    grid-row-gap: 5em;
+}
+
+.mainContentProduct {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    background-color: $color-whitefont;
+    grid-row-gap: 5em;
+}
+
+.bodytextcharity {
+    font-family: $font-bodytext;
+    color: $color-bodytext;
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.titletextcharity {
+    font-family: $font-text;
+    color: $color-blackfont;
+    font-size: 1.8em;
+    text-align: left;
+    margin-top: 0;
+}
+
+.charitytext {
+    text-align: left;
 }
 
 
+/* BUTTONS */
 .readmorebtn {
 	background-color: $color-stndbutton;
 	border: none;
 	border-radius: 5px;
-	color: #ffffff;
+	color: $color-whitefont;
 	font-family: $font-bodytext;
 	text-align: center;
 	cursor: pointer;
@@ -203,16 +252,22 @@ th {
 	width: 150px;
 	font-size: 1.3em;
 	margin: 3%;
+    transition: ease-in-out 0.3s;
 	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #0068b4;
+        transition: ease-in-out 0.3s;
+    }
 }
 
 .donatebtn {
 	background-color: $color-ctabutton;
 	border: none;
 	border-radius: 5px;
-	color: #ffffff;
+	color: $color-whitefont;
 	font-family: $font-bodytext;
 	text-align: center;
 	cursor: pointer;
@@ -221,16 +276,22 @@ th {
 	font-size: 1.3em;
 	margin: 3%;
 	margin-left: 0;
+    transition: ease-in-out 0.3s;
 	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #4aa22c;
+        transition: ease-in-out 0.3s;
+    }
 }
 
 .facebookbtn {
     background-color: #3C5A99;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: $color-whitefont;
     font-family: $font-bodytext;
     text-align: center;
     cursor: pointer;
@@ -239,16 +300,22 @@ th {
     font-size: 1.3em;
     margin: 3%;
     margin-left: 0;
+    transition: ease-in-out 0.3s;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #627aad;
+        transition: ease-in-out 0.3s;
+    }
 }
 
 .linkedinbtn {
     background-color: #0077B7;
     border: none;
     border-radius: 5px;
-    color: #ffffff;
+    color: $color-whitefont;
     font-family: $font-bodytext;
     text-align: center;
     cursor: pointer;
@@ -257,31 +324,18 @@ th {
     font-size: 1.3em;
     margin: 3%;
     margin-left: 0;
+    transition: ease-in-out 0.3s;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #4c9fcc;
+        transition: ease-in-out 0.3s;
+    }
 }
 
-.bodytextcharity {
-	font-family: $font-bodytext;
-	color: $color-bodytext;
-	font-size: 1.3em;
-	text-align: left;
 
-
-}
-
-.titletextcharity {
-	font-family: $font-text;
-	color: $color-blackfont;
-	font-size: 1.5em;
-	text-align: left;
-	margin-top: 0;
-}
-
-.charitytext {
-	text-align: left;
-}
 
 /* Index.php */
 
@@ -328,10 +382,10 @@ th {
     .linkedIn {
         margin-top:30px;
         text-align: right;
-        
-        &:hover {
-            opacity:0.8;
-        }
+    }
+    
+    .linkedIn:hover {
+        opacity:0.8;
     }
 }
 
@@ -344,10 +398,9 @@ th {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10px;
     background-color:$color-backgroundlight;
-    padding-bottom: 30px;
     
     &__overview {
-        font-size:22px;
+        
         padding-left:30px;
         
         ul {
@@ -379,18 +432,15 @@ th {
         
         .diploma-name {
             float:left;
-            width:180px;
-            font-size:16px;
         }
         
     }
     
     .diploma-container {
-        background-color: $color-backgrounddark;
+        background-color: red;
         margin-bottom: 10px;
         margin-right:40px;
         width:70%;
-        border-radius:7px;
         float:left;
     }
     
@@ -400,16 +450,11 @@ th {
         line-height: 34px;
         color: $color-whitefont;
         font-family:$font-titles;
-        border-radius:7px;
-        background-color: $color-stndbutton;
     }
     
     .municipalWastewater {
-        width: 50%; 
-    }
-    
-    .commercialBuildings {
-        width: 75%;
+        width: 80%;
+        background-color: #008ba9;
     }
     
     .diploma-name {
@@ -417,50 +462,5 @@ th {
         margin-top:8px;
         font-family:$font-text;
         color:$color-blackfont;
-    }
-}
-
-.activityFeed {
-    
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-    margin-top:20px;
-    background-color:$color-backgroundlight;
-    padding-bottom: 30px;
-    padding-left:30px;
-    
-    h3 {
-        font-family:$font-titles;
-        font-size:35px;
-        color:$color-blackfont;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding:0;
-        font-family: $font-bodytext;
-        font-size:22px;
-        line-height:18px;
-    }
-    
-    li {
-        margin-bottom:25px;
-    }
-    
-    strong {
-        color:$color-texthighlight;
-    }
-    
-    small {
-        color:$color-backgrounddark;
-        font-size:16px;
-        padding:0;
-        margin:0;
-    }
-    
-    i {
-        color:$color-negbutton;
-        width:20px;
     }
 }
