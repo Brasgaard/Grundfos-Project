@@ -18,7 +18,7 @@
 
             <!-- WASTEWATER DIPLOMA -->
             <section>
-                <img class="charitypictures" src="img/grundfos-wastewater.jpg" title="Grundfos municipal wastewater" alt="Grundfos municipal wastewater">
+                <img class="rewardpictures" src="img/grundfos-wastewater.jpg" title="Grundfos municipal wastewater" alt="Grundfos municipal wastewater">
             </section>
                 
             <section class="charitytext">
@@ -36,7 +36,7 @@
 
             <!-- COMMERCIAL BUILDING -->
             <section>
-                <img class="charitypictures" src="img/grundfos-commercial.jpg" title="Grundfos commercial building" alt="Grundfos commercial building">
+                <img class="rewardpictures" src="img/grundfos-commercial.jpg" title="Grundfos commercial building" alt="Grundfos commercial building">
             </section>
             
             <section class="charitytext">
