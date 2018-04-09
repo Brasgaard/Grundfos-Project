@@ -67,6 +67,64 @@ body {
     text-align: left;
     padding:0 50px 50px 50px;
     min-height:70vh;
+
+    &__userList {
+		border-collapse: collapse;
+    	width: 80%;
+		margin: auto;
+	}
+}
+
+.userList {
+	&__h1 {
+		text-align: left;
+		font-family: $font-titles;
+		color: $color-blackfont;
+	}
+	
+	&__p {
+		text-align: left;
+		font-family: $font-bodytext;
+		color: $color-blackfont;
+		margin-bottom: 10%;
+	}
+	&Btn {
+	font-family: $font-text;
+	margin: auto 3% 2% 3%;
+	color: white;
+	font-size: 20px;
+	}
+}
+
+#addBtn {
+	background-color: $color-ctabutton;
+	border-color: $color-ctabutton;
+}
+
+#courseBtn {
+	background-color: $color-stndbutton;
+	border-color: $color-stndbutton;
+}
+
+#removeBtn {
+	background-color: $color-negbutton;
+	border-color: $color-negbutton;
+	
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	font-family: $font-text;
+}
+
+tr:nth-child(even){
+	background-color: $color-backgroundlight;
+}
+
+th {
+    background-color: $color-backgrounddark;
+    color: white;
 }
 
 .mainContentReward {
@@ -106,7 +164,6 @@ body {
 	text-align: center;
 }
 
-<<<<<<< HEAD
 .producttitle {
 	font-family: $font-titles;
 	color: $color-blackfont;
@@ -224,7 +281,7 @@ body {
 
 .charitytext {
 	text-align: left;
-=======
+
 /* Index.php */
 
 .intro {
@@ -351,5 +408,6 @@ body {
         font-family:$font-text;
         color:$color-blackfont;
     }
->>>>>>> ce0855d2be585503fd089947746c0bfb703998ef
+
+    }
 }
