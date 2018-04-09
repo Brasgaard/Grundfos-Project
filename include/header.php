@@ -1,3 +1,3 @@
         <header class="gridContainer__div grundfosHeader">
-            <img id="headerimage" src="img/grundfos-header.jpg" title="Grundfos header" alt="Grundfos header">
+            <img id="headerimage" src="img/grundfos-header.jpg" alt="Grundfos header">
         </header>
