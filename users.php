@@ -37,7 +37,7 @@
 
             <table class="mainContent__userList" id="userTable">
                 <tr id="mainListRow">
-                    <th><input type="checkbox" name="" id="mainCheck">Select all</th>
+                    <th><input type="checkbox" name="allUsers" id="mainCheck">Select all</th>
                     <th>Name</th>
                     <th>Role</th>
                     <th>Points</th>
@@ -45,21 +45,21 @@
                     <th></th>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="user" id=""></td>
+                    <td><input type="checkbox" name="user"></td>
                     <td>Sean Ryg</td>
                     <td>Channel Partner</td>
                     <td>10000</td>
                     <td>SCALA2</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="user" id=""></td>
+                    <td><input type="checkbox" name="user"></td>
                     <td>Alexander Braasgard</td>
                     <td>Heating Engineer</td>
                     <td>7000</td>
                     <td>ALPHA3</td>
                 </tr>
                 <tr>
-                    <td><input type="checkbox" name="user" id=""></td>
+                    <td><input type="checkbox" name="user"></td>
                     <td>Lukas Brøndel</td>
                     <td>Industry Engineer</td>
                     <td>5000</td>
