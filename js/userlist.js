@@ -32,35 +32,41 @@ for (i = 0; i < remove.length; i++) {
 document.getElementById("addBtn").addEventListener("click", function() {
     var userName = document.getElementById("nameInput").value;
     var userRole = document.getElementById("rolesDrop").value;
-    var userCheck = document.createElement("input");
-    userCheck.type = "checkbox";
-    userCheck.className = "userCheck";
-    var newRow = userList.insertRow(4);
-    var checkCell = newRow.insertCell(0);
-    var nameCell = newRow.insertCell(1);
-    var roleCell = newRow.insertCell(2);
-    var rankCell = newRow.insertCell(3);
-    var courseCell = newRow.insertCell(4);
-    courseCell.className = "assignCourse";
-    //var courseCell = newRow.insertCell(4);
-    checkCell.appendChild(userCheck);
-    nameCell.innerHTML = userName;
-    roleCell.innerHTML = userRole;
-    rankCell.innerHTML = 0;
-    courseCell.innerHTML = "";
+    if (userName == "" || userName == null) {
+        alert("You must enter a name into the field to create a user");
+    }
+    else {
+        var userCheck = document.createElement("input");
+        userCheck.type = "checkbox";
+        userCheck.className = "userCheck";
+        var newRow = userList.insertRow(4);
+        var checkCell = newRow.insertCell(0);
+        var nameCell = newRow.insertCell(1);
+        var roleCell = newRow.insertCell(2);
+        var rankCell = newRow.insertCell(3);
+        var courseCell = newRow.insertCell(4);
+        courseCell.className = "assignCourse";
+        //var courseCell = newRow.insertCell(4);
+        checkCell.appendChild(userCheck);
+        nameCell.innerHTML = userName;
+        roleCell.innerHTML = userRole;
+        rankCell.innerHTML = 0;
+        courseCell.innerHTML = "";
 
-    var removeBtn = document.createElement("button");
-    var removeTxt = document.createTextNode("X");
-    removeBtn.className = "removeBtn";
-    removeBtn.appendChild(removeTxt);
-    newRow.appendChild(removeBtn);
+        var removeBtn = document.createElement("button");
+        var removeTxt = document.createTextNode("X");
+        removeBtn.className = "removeBtn";
+        removeBtn.appendChild(removeTxt);
+        newRow.appendChild(removeBtn);
 
-    for (i = 0; i < remove.length; i++) {
-        remove[i].onclick = function() {
-            var row = this.parentElement;
-            row.style.display = "none";
+        for (i = 0; i < remove.length; i++) {
+            remove[i].onclick = function() {
+                var row = this.parentElement;
+                row.style.display = "none";
+            }
         }
     }
+    
 });
 
 document.getElementById("courseBtn").addEventListener("click", function() {
