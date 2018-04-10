@@ -213,11 +213,17 @@ body {
 }
 
 .removeBtn {
-    background-color: #dd0028;
-    color: $color-whitefont;
+    background:none;;
+    color: #dd0028;
     border: none;
     cursor: pointer;
-    padding: 1% auto auto 1%;	
+    padding: 1% auto auto 1%;
+    margin-top:10px;
+
+    &:hover {
+        background:none;;
+        color: #000;
+        }
 }
 
 th, td {

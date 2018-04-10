@@ -42,6 +42,7 @@
                     <th>Role</th>
                     <th>Points</th>
                     <th>Courses</th>
+                    <th></th>
                 </tr>
                 <tr>
                     <td><input type="checkbox" name="user" id=""></td>
