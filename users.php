@@ -37,21 +37,21 @@
                     <th>Points</th>
                     <th>Courses</th>
                 </tr>
-                <tr class="userRow">
+                <tr>
                     <td><input type="checkbox" name="userCheck" id=""></td>
                     <td>Lukas Brøndel</td>
                     <td>Wholesaler</td>
                     <td>5000</td>
                     <td>Magna 2</td>
                 </tr>
-                <tr class="userRow">
+                <tr>
                     <td><input type="checkbox" name="userCheck" id=""></td>
                     <td>Alexander Braasgard</td>
                     <td>Engineer</td>
                     <td>7000</td>
                     <td>Pumps</td>
                 </tr>
-                <tr class="userRow">
+                <tr>
                     <td><input type="checkbox" name="userCheck" id=""></td>
                     <td>Sean Ryg</td>
                     <td>Commercial Builder</td>
