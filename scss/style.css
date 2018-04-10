@@ -77,30 +77,39 @@ body {
   .mainContent__userList {
     border-collapse: collapse;
     width: 80%;
-    margin: auto; }
+    border: 1px solid #959595; }
 
 .userList__h1 {
   text-align: left;
   font-family: titleFont;
-  color: #333333; }
-.userList__p {
-  text-align: left;
-  font-family: Tahoma, sans-serif;
   color: #333333;
-  margin-bottom: 10%; }
+  font-size: 3em;
+  font-weight: 300; }
+.userList__h2 {
+  text-align: left;
+  font-family: textFont;
+  color: #333333;
+  margin-bottom: 7%;
+  font-weight: 300;
+  font-size: 1.3em; }
+
+#listHeader {
+  text-align: left; }
 
 .listHeader__h2 {
   font-family: textFont;
   color: #333333;
-  font-size: 1em; }
+  font-size: 1.3em; }
 .listHeader__p {
   font-family: Tahoma, sans-serif;
-  color: #727272; }
+  color: #727272;
+  font-size: 1.3em; }
 
 .listInput {
   font-family: textFont;
   color: #333333;
-  font-size: 1em; }
+  font-size: 1em;
+  margin: auto; }
 
 #addBtn {
   background-color: #6EB556;
@@ -114,7 +123,7 @@ body {
   width: 120px;
   font-size: 1em;
   margin: 2%;
-  margin-left: 0;
+  margin-left: 20px;
   transition: ease-in-out 0.3s;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
@@ -135,6 +144,7 @@ body {
   width: 120px;
   font-size: 1em;
   margin: 2%;
+  margin-left: 20px;
   transition: ease-in-out 0.3s;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.35);
@@ -145,20 +155,22 @@ body {
 
 .removeBtn {
   background-color: #dd0028;
+  color: #ffffff;
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 1% auto auto 1%; }
 
 th, td {
   text-align: left;
   padding: 8px;
-  font-family: textFont; }
+  font-family: Tahoma, sans-serif; }
 
 tr:nth-child(even) {
   background-color: #DCDCDC; }
 
 th {
   background-color: #959595;
-  color: white; }
+  color: #ffffff; }
 
 .userList {
   grid-area: main;

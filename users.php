@@ -14,10 +14,10 @@
 
         <div class="gridContainer__div mainContent">
             <h1 class="userList__h1">Manage your employees within the Grundfos Ecademy</h1>
-            <p class="userList__p">Add users and assign courses, or check the stadings of current users within your organization.</p>
+            <h2 class="userList__h2">Add users and assign courses, or check the stadings of current users within your organization.</h2>
 
             <div id="listHeader">
-                <h2 class="listHeader__h2">Manage Users</h2>
+                <!--<h2 class="listHeader__h2">Manage Users</h2>-->
                 <p class="listHeader__p">Type a name in the field and select a row to add a new user. Assign them a course by selecting from the dropdown menu.</p>
                 <input type="text" id="nameInput" class="listInput" placeholder="Enter the users name here...">
                 <select name="roles" id="rolesDrop" class="listInput">

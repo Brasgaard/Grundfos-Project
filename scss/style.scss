@@ -116,8 +116,8 @@ body {
 
     &__userList {
 		border-collapse: collapse;
-    	width: 80%;
-		margin: auto;
+        width: 80%;
+        border: 1px solid $color-backgrounddark;
 	}
 }
 
@@ -125,26 +125,35 @@ body {
 	&__h1 {
 		text-align: left;
 		font-family: $font-titles;
-		color: $color-blackfont;
+        color: $color-blackfont;
+        font-size: 3em;
+        font-weight: 300;
 	}
 	
-	&__p {
+	&__h2 {
 		text-align: left;
-		font-family: $font-bodytext;
+		font-family: $font-text;
 		color: $color-blackfont;
-		margin-bottom: 10%;
+        margin-bottom: 7%;
+        font-weight: 300;
+        font-size: 1.3em;
 	}
+}
+
+#listHeader {
+    text-align: left;
 }
 
 .listHeader {
     &__h2 {
         font-family: $font-text;
         color: $color-blackfont;
-        font-size: 1em;
+        font-size: 1.3em;
     }
     &__p {
         font-family: $font-bodytext;
         color: $color-bodytext;
+        font-size: 1.3em;
     }
 }
 
@@ -152,6 +161,7 @@ body {
     font-family: $font-text;
     color: $color-blackfont;
     font-size: 1em;
+    margin: auto;
 }
 
 #addBtn {
@@ -166,7 +176,7 @@ body {
 	width: 120px;
 	font-size: 1em;
 	margin: 2%;
-	margin-left: 0;
+	margin-left: 20px;
     transition: ease-in-out 0.3s;
 	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
@@ -189,7 +199,8 @@ body {
 	height: 30px;
 	width: 120px;
 	font-size: 1em;
-	margin: 2%;
+    margin: 2%;
+    margin-left: 20px;
     transition: ease-in-out 0.3s;
 	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
@@ -202,15 +213,17 @@ body {
 }
 
 .removeBtn {
-	background-color: #dd0028;
+    background-color: #dd0028;
+    color: $color-whitefont;
     border: none;
-    cursor: pointer;	
+    cursor: pointer;
+    padding: 1% auto auto 1%;	
 }
 
 th, td {
     text-align: left;
     padding: 8px;
-	font-family: $font-text;
+	font-family: $font-bodytext;
 }
 
 tr:nth-child(even){
@@ -219,7 +232,7 @@ tr:nth-child(even){
 
 th {
     background-color: $color-backgrounddark;
-    color: white;
+    color: $color-whitefont;
 }
 
 .userList {
