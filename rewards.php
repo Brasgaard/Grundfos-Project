@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Grundfos Ecademy - Reward</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <?php include 'include/head.php';?>
 </head>
 <body>
     <div class="gridContainer">
 
-        <header class="gridContainer__div grundfosHeader">
-            <p>Test</p>
-        </header>
+    <?php include 'include/header.php';?>
 
-        <div class="gridContainer__div leftNavMenu">
-            <a href="index.php" class="leftNavMenu__a"><i class="fas fa-home"></i> Home</a>
-            <a href="users.php" class="leftNavMenu__a"><i class="fas fa-user"></i> Users</a>
-            <a href="rewards.php" class="leftNavMenu__a"><i class="fas fa-gift"></i> Rewards</a>
-            <a href="diplomas.php" class="leftNavMenu__a"><i class="fas fa-clipboard-check"></i> Diplomas</a>
-        </div>
+
+    <?php include 'include/navigation.php';?>
 
         <div class="gridContainer__div mainContentReward">
-            <section id="product">
-                <p class="producttitle">
+            <section>
+                <h1 class="rewardtitle">
                     Product
-                </p>
+                </h1>
 
                 <img class="rewardpictures" src="img/grundfos-product.jpg" title="grundfos product rewards" alt="grundfos product rewards">
                 <br>
@@ -35,10 +24,10 @@
             
             </section>
                 
-            <section id="charity">
-                <p class="charitytitle">
+            <section>
+                <h1 class="rewardtitle">
                     Charity
-                </p>
+                </h1>
 
                 <img class="rewardpictures" src="img/grundfos-charity.jpg" title="grundfos support a charity" alt="grundfos support a charity">
                 <br>
@@ -47,9 +36,7 @@
             </section>
         </div>
 
-        <footer class="gridContainer__div grundfosFooter">
-            <p>Test</p>
-        </footer>
+    <?php include 'include/footer.php';?>
 
 </body>
 </html>

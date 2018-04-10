@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grundfos Ecademy - Products</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="scss/style.css" />
-    <link href="css/fontawesome-all.min.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <title>Grundfos Ecademy - Product</title>
+    <?php include 'include/head.php';?>
 </head>
 <body>
     <div class="gridContainer">
 
-        <header class="gridContainer__div grundfosHeader">
-            <p>Test</p>
-        </header>
+	<?php include 'include/header.php';?>
 
-        <div class="gridContainer__div leftNavMenu">
-            <a href="index.php" class="leftNavMenu__a"><i class="fas fa-home"></i> Home</a>
-            <a href="users.php" class="leftNavMenu__a"><i class="fas fa-user"></i> Users</a>
-            <a href="rewards.php" class="leftNavMenu__a"><i class="fas fa-gift"></i> Rewards</a>
-            <a href="diplomas.php" class="leftNavMenu__a"><i class="fas fa-clipboard-check"></i> Diplomas</a>
+	<?php include 'include/navigation.php';?>
+
+        <div class="gridContainer__div mainContentProduct">
+			<h1 class="titleleft">Products</h1>
+
+			<div></div>
+			<div></div>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-bottle.jpg" title="Grundfos waterbottle" alt="Grundfos waterbottle">
+            	<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>
+            </section>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-speaker.jpg" title="Grundfos speaker" alt="Grundfos speaker">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>	
+            </section>
+
+            <section>
+				<img class="productpictures" src="img/grundfos-itunes.jpg" title="Grundfos iTunes giftcard" alt="Grundfos iTunes giftcard">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>            	
+            </section>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-cutlery.jpg" title="Grundfos cutlery" alt="Grundfos cutlery">
+            	<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>
+            </section>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-flashlight.jpg" title="Grundfos flashlight" alt="Grundfos flashlight">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>	
+            </section>
+
+            <section>
+				<img class="productpictures" src="img/grundfos-giftcard.jpg" title="Grundfos GoDream giftcard" alt="Grundfos GoDream giftcard">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>            	
+            </section>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-glass.jpg" title="Grundfos mobile protection glass" alt="Grundfos mobile protection glass">
+            	<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>
+            </section>
+
+            <section>
+            	<img class="productpictures" src="img/grundfos-headset.jpg" title="Grundfos headset" alt="Grundfos headset">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>	
+            </section>
+
+            <section>
+				<img class="productpictures" src="img/grundfos-optimist.jpg" title="Grundfos optimist" alt="Grundfos optimist">
+				<br>
+				<a href="#" target="_blank"><button class="readmorebtn" type="button">Read more</button></a>            	
+            </section>
         </div>
 
-        <div class="gridContainer__div mainContent">
-            <p>Test test test</p>
-        </div>
-
-        <footer class="gridContainer__div grundfosFooter">
-            <p>Test</p>
-        </footer>
+    <?php include 'include/footer.php';?>
 
 </body>
 </html>
