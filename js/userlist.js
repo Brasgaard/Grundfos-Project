@@ -12,7 +12,7 @@ var userList = document.getElementById("userTable");
 
 var myUserList = document.getElementsByTagName("tr");
 var i;
-for (i = 0; i < myUserList.length; i++) {
+for (i = 1; i < myUserList.length; i++) {
     var removeBtn = document.createElement("button");
     var removeTxt = document.createTextNode("X");
     removeBtn.className = "removeBtn";
