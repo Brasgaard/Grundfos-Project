@@ -18,20 +18,21 @@
 
             <div id="listHeader">
                 <h2 class="listHeader__h2">Manage Users</h2>
-                <input type="text" id="nameInput" placeholder="Users name...">
-                <select name="roles" id="rolesDrop">
+                <p class="listHeader__p">Type a name in the field and select a row to add a new user. Assign them a course by selecting from the dropdown menu.</p>
+                <input type="text" id="nameInput" class="listInput" placeholder="Enter the users name here...">
+                <select name="roles" id="rolesDrop" class="listInput">
                     <option value="Channel Partner">Channel Partner</option>
                     <option value="Heating Engineer">Heating engineer</option>
                     <option value="Industry Engineer">Industry engineer</option>
                 </select>
-                <button id="addBtn" class="userListBtn">Add User</button>
-                <select name="courses" id="courseDrop">
+                <button id="addBtn">Add User</button>
+                <select name="courses" id="courseDrop" class="listInput">
                     <option value="AUTOADAPT">Grundfos AUTOADAPT</option>
                     <option value="SCALA2">SCALA2 pump</option>
                     <option value="ALPHA3">Grundfos ALPHA3</option>
                     <option value="MAGNA3">Grundfos MAGNA3</option>
                 </select>
-                <button id="courseBtn" class="userListBtn">Assign Course</button>
+                <button id="courseBtn">Assign Course</button>
             </div>
 
             <table class="mainContent__userList" id="userTable">

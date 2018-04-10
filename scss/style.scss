@@ -134,28 +134,77 @@ body {
 		color: $color-blackfont;
 		margin-bottom: 10%;
 	}
-	&Btn {
-	font-family: $font-text;
-	margin: auto 3% 2% 3%;
-	color: white;
-	font-size: 20px;
-	}
+}
+
+.listHeader {
+    &__h2 {
+        font-family: $font-text;
+        color: $color-blackfont;
+        font-size: 1em;
+    }
+    &__p {
+        font-family: $font-bodytext;
+        color: $color-bodytext;
+    }
+}
+
+.listInput {
+    font-family: $font-text;
+    color: $color-blackfont;
+    font-size: 1em;
 }
 
 #addBtn {
 	background-color: $color-ctabutton;
-	border-color: $color-ctabutton;
+	border: none;
+	border-radius: 5px;
+	color: $color-whitefont;
+	font-family: $font-bodytext;
+	text-align: center;
+	cursor: pointer;
+	height: 30px;
+	width: 120px;
+	font-size: 1em;
+	margin: 2%;
+	margin-left: 0;
+    transition: ease-in-out 0.3s;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #4aa22c;
+        transition: ease-in-out 0.3s;
+    }
 }
 
 #courseBtn {
 	background-color: $color-stndbutton;
-	border-color: $color-stndbutton;
+	border: none;
+	border-radius: 5px;
+	color: $color-whitefont;
+	font-family: $font-bodytext;
+	text-align: center;
+	cursor: pointer;
+	height: 30px;
+	width: 120px;
+	font-size: 1em;
+	margin: 2%;
+    transition: ease-in-out 0.3s;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.35);
+
+    &:hover {
+        background-color: #0068b4;
+        transition: ease-in-out 0.3s;
+    }
 }
 
-#removeBtn {
-	background-color: $color-negbutton;
-	border-color: $color-negbutton;
-	
+.removeBtn {
+	background-color: #dd0028;
+    border: none;
+    cursor: pointer;	
 }
 
 th, td {

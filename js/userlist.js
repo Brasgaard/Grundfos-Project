@@ -47,7 +47,7 @@ document.getElementById("addBtn").addEventListener("click", function() {
     nameCell.innerHTML = userName;
     roleCell.innerHTML = userRole;
     rankCell.innerHTML = 0;
-    courseCell.innerHTML = "Test";
+    courseCell.innerHTML = "";
 
     var removeBtn = document.createElement("button");
     var removeTxt = document.createTextNode("X");
